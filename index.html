@@ -1,40 +1,310 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu primeiro site</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jomara | Moda, Lar e Presentes em Araçatuba</title>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f1f5f9;
-            color: #1e293b;
-            text-align: center;
-            padding: 80px 20px;
-        }
+  <!-- SEO -->
+  <meta name="description" content="Jomara: loja de roupas femininas, enxoval, brinquedos, utensílios e presentes em Araçatuba-SP, na Rua Luís de Camões, 373. Há mais de 30 anos transformando momentos em histórias.">
+  <meta name="keywords" content="loja de roupas femininas Araçatuba, moda feminina Araçatuba, enxoval Araçatuba, brinquedos Araçatuba, presentes Araçatuba, utensílios para casa, compras e varejo Araçatuba, Pedro Perri, Jomara">
+  <meta name="geo.region" content="BR-SP">
+  <meta name="geo.placename" content="Araçatuba">
+  <meta name="theme-color" content="#442338">
 
-        h1 {
-            color: #2563eb;
-        }
+  <!-- Redes sociais -->
+  <meta property="og:title" content="Jomara | Moda • Lar • Presentes">
+  <meta property="og:description" content="Sinta-se em casa. Estilo e conforto para o seu dia a dia, há mais de 30 anos em Araçatuba-SP.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:image" content="img/hero-1.jpg">
 
-        .card {
-            background: white;
-            padding: 30px;
-            border-radius: 15px;
-            max-width: 500px;
-            margin: auto;
-            box-shadow: 0 4px 15px #0001;
-        }
-    </style>
+  <link rel="icon" href="img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Federo&family=Nunito:wght@400;600;700;800&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Dados estruturados para o Google (negócio local) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ClothingStore",
+    "name": "Jomara | Moda • Lar • Presentes",
+    "description": "Loja de roupas femininas, enxoval, brinquedos, utensílios e presentes em Araçatuba-SP.",
+    "telephone": "+55 18 98199-8292",
+    "image": "img/hero-1.jpg",
+    "logo": "img/logo.png",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rua Luís de Camões, 373 - Conj. Hab. Pedro Perri",
+      "addressLocality": "Araçatuba",
+      "addressRegion": "SP",
+      "addressCountry": "BR"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "18:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "14:00" }
+    ],
+    "hasMap": "https://maps.app.goo.gl/Djf3VRoMWqmjEsYHA",
+    "areaServed": "Sudeste do Brasil",
+    "sameAs": [
+      "https://www.instagram.com/jomaraseular",
+      "https://www.facebook.com/jomaraseular",
+      "https://bio.site/jomara"
+    ]
+  }
+  </script>
 </head>
 <body>
 
-    <div class="card">
-        <h1>Meu primeiro site!</h1>
-        <p>Este site está hospedado gratuitamente no GitHub Pages.</p>
-    </div>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
 
+  <!-- ===================== CABEÇALHO ===================== -->
+  <header>
+    <div class="nav">
+      <a class="brand" href="#inicio" aria-label="Jomara, início">
+        <img src="img/logo-claro.png" alt="Jomara" width="740" height="525">
+      </a>
+      <ul id="menu">
+        <li><a href="#produtos">Produtos</a></li>
+        <li><a href="#novidades">Novidades</a></li>
+        <li><a href="#quem-somos">Quem somos</a></li>
+        <li><a href="#visite">Visite a loja</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <a class="btn b-wa" href="https://wa.me/5518981998292?text=Ol%C3%A1%2C%20Jomara!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><use href="#wa"/></svg>Fale conosco
+      </a>
+      <button class="menu" id="tog" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero band" id="inicio">
+      <div class="wrap">
+        <div class="hero-text">
+          <p class="status" data-status>Horário da loja</p>
+          <h1>Sinta-se em casa. <span>Moda, lar e presentes.</span></h1>
+          <p class="lead">Na Jomara você encontra roupas femininas, enxoval, brinquedos, utensílios e aquele presente especial, com atendimento de quem conhece você pelo nome.</p>
+          <ul class="bio">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l2.6 5.6 6 .7-4.5 4.1 1.2 6L12 16.4 6.7 19.4l1.2-6L3.4 9.3l6-.7z"/></svg>Estilo e conforto para o seu dia a dia</li>
+            <li><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.4 3.1 4.5 6.9 4.5c2.1 0 3.6 1.2 5.1 3 1.5-1.8 3-3 5.1-3 3.8 0 6 3.9 4.5 7.3C19.5 16.4 12 21 12 21z"/></svg>Mais de 30 anos transformando momentos em histórias</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s7-6.2 7-12a7 7 0 10-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></svg>De Araçatuba para todo o Sudeste</li>
+          </ul>
+          <div class="ctas">
+            <a class="btn b-wa" href="https://wa.me/5518981998292?text=Ol%C3%A1%2C%20Jomara!%20Vim%20pelo%20site%20e%20gostaria%20de%20fazer%20um%20pedido." target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24"><use href="#wa"/></svg>Faça seu pedido
+            </a>
+            <a class="btn b-ghost" href="https://maps.app.goo.gl/Djf3VRoMWqmjEsYHA" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24"><use href="#pin"/></svg>Como chegar
+            </a>
+          </div>
+        </div>
+        <div class="arches" aria-hidden="true">
+          <figure><img src="img/hero-2.jpg" alt=""></figure>
+          <figure><img src="img/hero-1.jpg" alt=""></figure>
+          <figure><img src="img/hero-3.jpg" alt=""></figure>
+        </div>
+      </div>
+    </section>
+    <div class="ribbon"></div>
+
+    <!-- ===================== NÚMEROS ===================== -->
+    <section class="band facts-band">
+      <div class="wrap facts">
+        <div class="fact"><b>+30 anos</b><span>de história em Araçatuba</span></div>
+        <div class="fact"><b>+5 mil</b><span>seguidores no Instagram</span></div>
+        <div class="fact"><b>+1.900</b><span>novidades já postadas</span></div>
+        <div class="fact"><b>Sudeste</b><span>enviamos para toda a região</span></div>
+      </div>
+    </section>
+
+    <!-- ===================== CATEGORIAS ===================== -->
+    <section class="band" id="produtos">
+      <div class="wrap">
+        <div class="head">
+          <h2>Tudo para você, sua casa e quem você ama</h2>
+          <p class="lead">Do look do fim de semana ao enxoval completo: escolha a categoria e chame a gente no WhatsApp.</p>
+        </div>
+        <div class="cats" id="cats"><!-- preenchido por js/main.js --></div>
+      </div>
+    </section>
+
+    <!-- ===================== NOVIDADES ===================== -->
+    <section class="band shelf" id="novidades">
+      <div class="wrap">
+        <div class="head">
+          <div>
+            <h2>Chegou na loja</h2>
+            <p class="lead">Looks de fim de ano, enxoval, brinquedos e acessórios para o verão.</p>
+          </div>
+          <div class="arrows">
+            <button id="prev" aria-label="Anterior">←</button>
+            <button id="next" aria-label="Próximo">→</button>
+          </div>
+        </div>
+        <div class="rail" id="rail" tabindex="0" aria-label="Vitrine de novidades"><!-- preenchido por js/main.js --></div>
+        <p class="more">
+          <a class="btn b-coral" href="https://www.instagram.com/jomaraseular/" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24"><use href="#ig"/></svg>Ver tudo no Instagram
+          </a>
+        </p>
+      </div>
+    </section>
+
+    <!-- ===================== COMO COMPRAR ===================== -->
+    <section class="band how">
+      <div class="wrap">
+        <h2>Comprar na Jomara é simples</h2>
+        <ol class="steps">
+          <li>
+            <svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="22" fill="#fb8b61"/><path d="M15 19h18l-2 14H17z" fill="#442338"/><path d="M19 19a5 5 0 0110 0" fill="none" stroke="#442338" stroke-width="3"/></svg>
+            <h3>Escolha</h3>
+            <p>Veja as novidades aqui, no Instagram ou venha passear pela loja.</p>
+          </li>
+          <li>
+            <svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="22" fill="#25d366"/><use href="#wa" x="12" y="12" width="24" height="24" color="#fff"/></svg>
+            <h3>Chame no WhatsApp</h3>
+            <p>Tire dúvidas sobre tamanho, cor e disponibilidade com a nossa equipe.</p>
+          </li>
+          <li>
+            <svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="22" fill="#442338"/><path d="M24 36s9-8 9-15a9 9 0 10-18 0c0 7 9 15 9 15z" fill="#fb8b61"/><circle cx="24" cy="21" r="3.4" fill="#442338"/></svg>
+            <h3>Retire ou receba</h3>
+            <p>Busque na loja em Araçatuba ou combine o envio para sua cidade no Sudeste.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===================== QUEM SOMOS ===================== -->
+    <section class="band about" id="quem-somos">
+      <div class="wrap">
+        <div class="collage">
+          <img class="tall" src="img/loja.jpg" alt="Interior da loja Jomara em Araçatuba" loading="lazy">
+          <img class="sq" src="img/cuidado.jpg" alt="Peças dobradas com cuidado para entrega" loading="lazy">
+          <img class="sq" src="img/brinquedos.jpg" alt="Prateleiras de brinquedos da Jomara" loading="lazy">
+        </div>
+        <div>
+          <h2>Agora é Jomara. A mesma loja que você já ama.</h2>
+          <p class="lead">A Jomara Modas e Presentes ganhou um nome mais curto e uma marca nova, mas o jeito de receber continua igual.</p>
+          <p>Há mais de 30 anos, a Jomara faz parte da vida das famílias de Araçatuba. Começamos com moda e presentes e fomos crescendo junto com nossas clientes: hoje também temos enxoval, brinquedos e utensílios para o lar.</p>
+          <p>Aqui cada peça é escolhida a dedo, cada cliente é recebida como visita, e cada compra pode virar uma história bonita para contar. E se você não puder vir até nós, a gente leva a Jomara até você, em todo o Sudeste.</p>
+          <div class="values">
+            <div><b>Acolhimento</b><span>Atendimento próximo, sem pressa.</span></div>
+            <div><b>Confiança</b><span>Mais de três décadas de tradição.</span></div>
+            <div><b>Variedade</b><span>Moda, casa e presentes num só lugar.</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== DEPOIMENTOS ===================== -->
+    <section class="band love">
+      <div class="wrap">
+        <h2>O que dizem as nossas clientes</h2>
+        <p class="lead">Comentários deixados no nosso Instagram.</p>
+        <div class="quotes">
+          <blockquote>Atendimento nota mil!<cite>Cliente, via Instagram</cite></blockquote>
+          <blockquote>Continuem com a mesma cordialidade, bom atendimento e alegria no rosto.<cite>Cliente, via Instagram</cite></blockquote>
+          <blockquote>Que essa loja maravilhosa brilhe muito mais. Sucesso!<cite>Cliente, via Instagram</cite></blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== VISITE + CONTATO ===================== -->
+    <section class="band contact" id="visite">
+      <div class="wrap">
+        <div class="visit">
+          <img class="m" src="img/marca-clara.png" alt="" width="420" height="320">
+          <h2>Venha tomar um café com a gente</h2>
+          <p class="status" data-status>Horário da loja</p>
+
+          <address>
+            <svg viewBox="0 0 24 24"><use href="#pin"/></svg>
+            <span>Rua Luís de Camões, 373<br>Conj. Hab. Pedro Perri · Araçatuba-SP</span>
+          </address>
+
+          <ul class="hours" aria-label="Horário de funcionamento">
+            <li data-dias="1,2,3,4,5"><span>Segunda a sexta</span><b>9h às 18h</b></li>
+            <li data-dias="6"><span>Sábado</span><b>9h às 14h</b></li>
+            <li data-dias="0"><span>Domingo</span><b>Fechado</b></li>
+          </ul>
+
+          <div class="ctas">
+            <a class="btn b-coral" href="https://maps.app.goo.gl/Djf3VRoMWqmjEsYHA" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24"><use href="#pin"/></svg>Como chegar
+            </a>
+            <a class="btn b-ghost" href="https://wa.me/5518981998292" target="_blank" rel="noopener">(18) 98199-8292</a>
+          </div>
+        </div>
+
+        <div id="contato">
+          <h2>Fale com a Jomara</h2>
+          <div class="links">
+            <a class="link" href="https://wa.me/5518981998292?text=Ol%C3%A1%2C%20Jomara!%20Vim%20pelo%20site." target="_blank" rel="noopener">
+              <span class="ic i-wa"><svg viewBox="0 0 24 24"><use href="#wa"/></svg></span>
+              <span><b>WhatsApp</b><span>(18) 98199-8292 · pedidos e dúvidas</span></span><span class="ar">→</span>
+            </a>
+            <a class="link" href="https://whatsapp.com/channel/0029VaNwdt35EjxqHOMyUB1H" target="_blank" rel="noopener">
+              <span class="ic i-gr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M16 4.5a3.2 3.2 0 010 6.2M21 20c0-2.6-1.6-4.9-4-5.7"/></svg></span>
+              <span><b>Grupo de ofertas</b><span>Novidades e promoções em primeira mão</span></span><span class="ar">→</span>
+            </a>
+            <a class="link" href="https://maps.app.goo.gl/Djf3VRoMWqmjEsYHA" target="_blank" rel="noopener">
+              <span class="ic i-map"><svg viewBox="0 0 24 24"><use href="#pin"/></svg></span>
+              <span><b>Como chegar</b><span>Rua Luís de Camões, 373 · Google Maps</span></span><span class="ar">→</span>
+            </a>
+            <a class="link" href="https://www.instagram.com/jomaraseular/" target="_blank" rel="noopener">
+              <span class="ic i-ig"><svg viewBox="0 0 24 24"><use href="#ig"/></svg></span>
+              <span><b>Instagram</b><span>@jomaraseular</span></span><span class="ar">→</span>
+            </a>
+            <a class="link" href="https://www.facebook.com/jomaraseular" target="_blank" rel="noopener">
+              <span class="ic i-fb"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 8.5V6.8c0-.8.5-1.3 1.4-1.3H17V2.2h-2.6C11.7 2.2 10.4 4 10.4 6.4v2.1H8v3.4h2.4V22H14V11.9h2.7l.4-3.4z"/></svg></span>
+              <span><b>Facebook</b><span>/jomaraseular</span></span><span class="ar">→</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== RODAPÉ ===================== -->
+  <footer>
+    <div class="wrap">
+      <img src="img/logo-claro.png" alt="Jomara" width="740" height="525">
+      <div class="f-col">
+        <b>Endereço</b>
+        <p>Rua Luís de Camões, 373<br>Conj. Hab. Pedro Perri<br>Araçatuba-SP</p>
+      </div>
+      <div class="f-col">
+        <b>Horário</b>
+        <p>Seg a sex · 9h às 18h<br>Sábado · 9h às 14h</p>
+      </div>
+      <div class="f-col">
+        <b>Contato</b>
+        <p><a href="https://wa.me/5518981998292" target="_blank" rel="noopener">(18) 98199-8292</a><br><a href="https://www.instagram.com/jomaraseular/" target="_blank" rel="noopener">@jomaraseular</a></p>
+      </div>
+    </div>
+    <p class="copy">© <span id="yr">2026</span> Jomara · Moda • Lar • Presentes. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Botão flutuante do WhatsApp -->
+  <a class="float" href="https://wa.me/5518981998292?text=Ol%C3%A1%2C%20Jomara!%20Vim%20pelo%20site." target="_blank" rel="noopener" aria-label="Conversar no WhatsApp">
+    <svg viewBox="0 0 24 24"><use href="#wa"/></svg>
+  </a>
+
+  <!-- Ícones reutilizáveis -->
+  <svg class="sprite" aria-hidden="true">
+    <symbol id="wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1112 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1-.7-.3-1.4-.7-2-1.3-.6-.5-1-1.1-1.4-1.8-.1-.2 0-.4.1-.5l.4-.5.3-.5v-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.6.6-.9 1.3-.9 2.1.1.9.4 1.8 1 2.6 1.1 1.6 2.5 2.9 4.2 3.7.5.2 1.6.6 2.2.6.7 0 1.6-.5 1.9-1.1.2-.4.2-.8.1-1.1l-.5-.2z"/></symbol>
+    <symbol id="ig" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></g></symbol>
+    <symbol id="pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s7-6.2 7-12a7 7 0 10-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></g></symbol>
+  </svg>
+
+  <script src="js/main.js" defer></script>
 </body>
 </html>
